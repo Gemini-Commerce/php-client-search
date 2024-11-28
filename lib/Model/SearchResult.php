@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchResult Class Doc Comment
  *
  * @category Class
  * @description contains the search results, aggregations and paging information
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,12 +62,12 @@ class SearchResult implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'index' => 'string',
-        'params' => '\OpenAPI\Client\Model\SearchParams',
+        'params' => '\GeminiCommerce\Search\Model\SearchParams',
         'page' => 'int',
         'total_pages' => 'int',
         'total_hits' => 'int',
         'hits' => 'string[]',
-        'aggregations' => 'array<string,\OpenAPI\Client\Model\SearchAggrMap>'
+        'aggregations' => 'array<string,\GeminiCommerce\Search\Model\SearchAggrMap>'
     ];
 
     /**
@@ -375,7 +375,7 @@ class SearchResult implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets params
      *
-     * @return \OpenAPI\Client\Model\SearchParams|null
+     * @return \GeminiCommerce\Search\Model\SearchParams|null
      */
     public function getParams()
     {
@@ -385,7 +385,7 @@ class SearchResult implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets params
      *
-     * @param \OpenAPI\Client\Model\SearchParams|null $params params
+     * @param \GeminiCommerce\Search\Model\SearchParams|null $params params
      *
      * @return self
      */
@@ -510,7 +510,7 @@ class SearchResult implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets aggregations
      *
-     * @return array<string,\OpenAPI\Client\Model\SearchAggrMap>|null
+     * @return array<string,\GeminiCommerce\Search\Model\SearchAggrMap>|null
      */
     public function getAggregations()
     {
@@ -520,7 +520,7 @@ class SearchResult implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets aggregations
      *
-     * @param array<string,\OpenAPI\Client\Model\SearchAggrMap>|null $aggregations array of aggregation obtained by search result
+     * @param array<string,\GeminiCommerce\Search\Model\SearchAggrMap>|null $aggregations array of aggregation obtained by search result
      *
      * @return self
      */

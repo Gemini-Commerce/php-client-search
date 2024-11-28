@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchPayload Class Doc Comment
  *
  * @category Class
  * @description contains the search request payload
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class SearchPayload implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'index' => 'string',
-        'params' => '\OpenAPI\Client\Model\SearchParams'
+        'params' => '\GeminiCommerce\Search\Model\SearchParams'
     ];
 
     /**
@@ -343,7 +343,7 @@ class SearchPayload implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets params
      *
-     * @return \OpenAPI\Client\Model\SearchParams
+     * @return \GeminiCommerce\Search\Model\SearchParams
      */
     public function getParams()
     {
@@ -353,7 +353,7 @@ class SearchPayload implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets params
      *
-     * @param \OpenAPI\Client\Model\SearchParams $params params
+     * @param \GeminiCommerce\Search\Model\SearchParams $params params
      *
      * @return self
      */

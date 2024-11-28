@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchQueryError Class Doc Comment
  *
  * @category Class
  * @description contains error information obtained during search process
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

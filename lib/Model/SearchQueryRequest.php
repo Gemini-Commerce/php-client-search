@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchQueryRequest Class Doc Comment
  *
  * @category Class
  * @description contains search request information about how and where to make the search
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class SearchQueryRequest implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'tenant_id' => 'string',
-        'type' => '\OpenAPI\Client\Model\SearchQueryRequestType',
-        'payload' => '\OpenAPI\Client\Model\SearchPayload[]'
+        'type' => '\GeminiCommerce\Search\Model\SearchQueryRequestType',
+        'payload' => '\GeminiCommerce\Search\Model\SearchPayload[]'
     ];
 
     /**
@@ -347,7 +347,7 @@ class SearchQueryRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\SearchQueryRequestType|null
+     * @return \GeminiCommerce\Search\Model\SearchQueryRequestType|null
      */
     public function getType()
     {
@@ -357,7 +357,7 @@ class SearchQueryRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\SearchQueryRequestType|null $type type
+     * @param \GeminiCommerce\Search\Model\SearchQueryRequestType|null $type type
      *
      * @return self
      */
@@ -374,7 +374,7 @@ class SearchQueryRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets payload
      *
-     * @return \OpenAPI\Client\Model\SearchPayload[]
+     * @return \GeminiCommerce\Search\Model\SearchPayload[]
      */
     public function getPayload()
     {
@@ -384,7 +384,7 @@ class SearchQueryRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets payload
      *
-     * @param \OpenAPI\Client\Model\SearchPayload[] $payload contains the search request payload
+     * @param \GeminiCommerce\Search\Model\SearchPayload[] $payload contains the search request payload
      *
      * @return self
      */

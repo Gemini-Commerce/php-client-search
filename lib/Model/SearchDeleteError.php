@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchDeleteError Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class SearchDeleteError implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'constraints' => '\OpenAPI\Client\Model\SearchDeleteConstraints',
+        'constraints' => '\GeminiCommerce\Search\Model\SearchDeleteConstraints',
         'code' => 'string',
         'message' => 'string'
     ];
@@ -316,7 +316,7 @@ class SearchDeleteError implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets constraints
      *
-     * @return \OpenAPI\Client\Model\SearchDeleteConstraints|null
+     * @return \GeminiCommerce\Search\Model\SearchDeleteConstraints|null
      */
     public function getConstraints()
     {
@@ -326,7 +326,7 @@ class SearchDeleteError implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets constraints
      *
-     * @param \OpenAPI\Client\Model\SearchDeleteConstraints|null $constraints constraints
+     * @param \GeminiCommerce\Search\Model\SearchDeleteConstraints|null $constraints constraints
      *
      * @return self
      */

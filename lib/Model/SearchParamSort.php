@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchParamSort Class Doc Comment
  *
  * @category Class
  * @description contains a list of document attributes on which order the result for
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class SearchParamSort implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'attribute' => 'string',
-        'order' => '\OpenAPI\Client\Model\ParamSortOrder'
+        'order' => '\GeminiCommerce\Search\Model\ParamSortOrder'
     ];
 
     /**
@@ -340,7 +340,7 @@ class SearchParamSort implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\ParamSortOrder|null
+     * @return \GeminiCommerce\Search\Model\ParamSortOrder|null
      */
     public function getOrder()
     {
@@ -350,7 +350,7 @@ class SearchParamSort implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\ParamSortOrder|null $order order
+     * @param \GeminiCommerce\Search\Model\ParamSortOrder|null $order order
      *
      * @return self
      */

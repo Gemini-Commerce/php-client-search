@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchQueryResponse Class Doc Comment
  *
  * @category Class
  * @description contains the search results and errors
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class SearchQueryResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'result' => '\OpenAPI\Client\Model\SearchResult[]',
-        'errors' => '\OpenAPI\Client\Model\SearchQueryError[]'
+        'result' => '\GeminiCommerce\Search\Model\SearchResult[]',
+        'errors' => '\GeminiCommerce\Search\Model\SearchQueryError[]'
     ];
 
     /**
@@ -310,7 +310,7 @@ class SearchQueryResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets result
      *
-     * @return \OpenAPI\Client\Model\SearchResult[]|null
+     * @return \GeminiCommerce\Search\Model\SearchResult[]|null
      */
     public function getResult()
     {
@@ -320,7 +320,7 @@ class SearchQueryResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets result
      *
-     * @param \OpenAPI\Client\Model\SearchResult[]|null $result array of SearchResult that contains search results per index [#DOCGENBUG REQUIRED FIELD]
+     * @param \GeminiCommerce\Search\Model\SearchResult[]|null $result array of SearchResult that contains search results per index [#DOCGENBUG REQUIRED FIELD]
      *
      * @return self
      */
@@ -337,7 +337,7 @@ class SearchQueryResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\SearchQueryError[]|null
+     * @return \GeminiCommerce\Search\Model\SearchQueryError[]|null
      */
     public function getErrors()
     {
@@ -347,7 +347,7 @@ class SearchQueryResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\SearchQueryError[]|null $errors array of error obtained during search process per index [#DOCGENBUG REQUIRED FIELD]
+     * @param \GeminiCommerce\Search\Model\SearchQueryError[]|null $errors array of error obtained during search process per index [#DOCGENBUG REQUIRED FIELD]
      *
      * @return self
      */

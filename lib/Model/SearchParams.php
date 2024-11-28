@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchParams Class Doc Comment
  *
  * @category Class
  * @description contains params needed to perform search
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,11 +64,11 @@ class SearchParams implements ModelInterface, ArrayAccess, \JsonSerializable
         'offset' => 'int',
         'limit' => 'int',
         'term' => 'string',
-        'searchables' => '\OpenAPI\Client\Model\SearchParamSearchable[]',
-        'filters' => '\OpenAPI\Client\Model\SearchParamFilter[]',
-        'attributes' => '\OpenAPI\Client\Model\SearchParamAttribute[]',
-        'facets' => '\OpenAPI\Client\Model\SearchParamFacet[]',
-        'sorts' => '\OpenAPI\Client\Model\SearchParamSort[]',
+        'searchables' => '\GeminiCommerce\Search\Model\SearchParamSearchable[]',
+        'filters' => '\GeminiCommerce\Search\Model\SearchParamFilter[]',
+        'attributes' => '\GeminiCommerce\Search\Model\SearchParamAttribute[]',
+        'facets' => '\GeminiCommerce\Search\Model\SearchParamFacet[]',
+        'sorts' => '\GeminiCommerce\Search\Model\SearchParamSort[]',
         'min_score' => 'float'
     ];
 
@@ -440,7 +440,7 @@ class SearchParams implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets searchables
      *
-     * @return \OpenAPI\Client\Model\SearchParamSearchable[]|null
+     * @return \GeminiCommerce\Search\Model\SearchParamSearchable[]|null
      */
     public function getSearchables()
     {
@@ -450,7 +450,7 @@ class SearchParams implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets searchables
      *
-     * @param \OpenAPI\Client\Model\SearchParamSearchable[]|null $searchables list of attributes where to search the indicated term, if not indicated it uses all in those present in index configuration
+     * @param \GeminiCommerce\Search\Model\SearchParamSearchable[]|null $searchables list of attributes where to search the indicated term, if not indicated it uses all in those present in index configuration
      *
      * @return self
      */
@@ -467,7 +467,7 @@ class SearchParams implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets filters
      *
-     * @return \OpenAPI\Client\Model\SearchParamFilter[]|null
+     * @return \GeminiCommerce\Search\Model\SearchParamFilter[]|null
      */
     public function getFilters()
     {
@@ -477,7 +477,7 @@ class SearchParams implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets filters
      *
-     * @param \OpenAPI\Client\Model\SearchParamFilter[]|null $filters list of attribute and relative value which you want to filter search results
+     * @param \GeminiCommerce\Search\Model\SearchParamFilter[]|null $filters list of attribute and relative value which you want to filter search results
      *
      * @return self
      */
@@ -494,7 +494,7 @@ class SearchParams implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attributes
      *
-     * @return \OpenAPI\Client\Model\SearchParamAttribute[]|null
+     * @return \GeminiCommerce\Search\Model\SearchParamAttribute[]|null
      */
     public function getAttributes()
     {
@@ -504,7 +504,7 @@ class SearchParams implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attributes
      *
-     * @param \OpenAPI\Client\Model\SearchParamAttribute[]|null $attributes attributes that you want to be present in search results
+     * @param \GeminiCommerce\Search\Model\SearchParamAttribute[]|null $attributes attributes that you want to be present in search results
      *
      * @return self
      */
@@ -521,7 +521,7 @@ class SearchParams implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets facets
      *
-     * @return \OpenAPI\Client\Model\SearchParamFacet[]|null
+     * @return \GeminiCommerce\Search\Model\SearchParamFacet[]|null
      */
     public function getFacets()
     {
@@ -531,7 +531,7 @@ class SearchParams implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets facets
      *
-     * @param \OpenAPI\Client\Model\SearchParamFacet[]|null $facets list of attributes you want to create aggregation to make filter suggestion
+     * @param \GeminiCommerce\Search\Model\SearchParamFacet[]|null $facets list of attributes you want to create aggregation to make filter suggestion
      *
      * @return self
      */
@@ -548,7 +548,7 @@ class SearchParams implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sorts
      *
-     * @return \OpenAPI\Client\Model\SearchParamSort[]|null
+     * @return \GeminiCommerce\Search\Model\SearchParamSort[]|null
      */
     public function getSorts()
     {
@@ -558,7 +558,7 @@ class SearchParams implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sorts
      *
-     * @param \OpenAPI\Client\Model\SearchParamSort[]|null $sorts params to sort search results
+     * @param \GeminiCommerce\Search\Model\SearchParamSort[]|null $sorts params to sort search results
      *
      * @return self
      */

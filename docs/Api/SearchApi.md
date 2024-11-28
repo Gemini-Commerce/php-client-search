@@ -1,4 +1,4 @@
-# OpenAPI\Client\SearchApi
+# GeminiCommerce\Search\SearchApi
 
 All URIs are relative to https://search.api.gogemini.io, except if the operation defines another base path.
 
@@ -29,23 +29,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: standardAuthorization
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 // Configure API key authorization: geminiAuthorization
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Gem-Token', 'YOUR_API_KEY');
+$config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKey('X-Gem-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Gem-Token', 'Bearer');
+// $config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Gem-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\SearchApi(
+$apiInstance = new GeminiCommerce\Search\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\SearchConfigRequest(); // \OpenAPI\Client\Model\SearchConfigRequest
+$body = new \GeminiCommerce\Search\Model\SearchConfigRequest(); // \GeminiCommerce\Search\Model\SearchConfigRequest
 
 try {
     $result = $apiInstance->searchConfiguration($body);
@@ -59,7 +59,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\SearchConfigRequest**](../Model/SearchConfigRequest.md)|  | |
+| **body** | [**\GeminiCommerce\Search\Model\SearchConfigRequest**](../Model/SearchConfigRequest.md)|  | |
 
 ### Return type
 
@@ -81,7 +81,7 @@ try {
 ## `searchDelete()`
 
 ```php
-searchDelete($body): \OpenAPI\Client\Model\SearchDeleteResponse
+searchDelete($body): \GeminiCommerce\Search\Model\SearchDeleteResponse
 ```
 
 Delete Indexes
@@ -96,23 +96,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: standardAuthorization
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 // Configure API key authorization: geminiAuthorization
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Gem-Token', 'YOUR_API_KEY');
+$config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKey('X-Gem-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Gem-Token', 'Bearer');
+// $config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Gem-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\SearchApi(
+$apiInstance = new GeminiCommerce\Search\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\SearchDeleteRequest(); // \OpenAPI\Client\Model\SearchDeleteRequest
+$body = new \GeminiCommerce\Search\Model\SearchDeleteRequest(); // \GeminiCommerce\Search\Model\SearchDeleteRequest
 
 try {
     $result = $apiInstance->searchDelete($body);
@@ -126,11 +126,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\SearchDeleteRequest**](../Model/SearchDeleteRequest.md)|  | |
+| **body** | [**\GeminiCommerce\Search\Model\SearchDeleteRequest**](../Model/SearchDeleteRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SearchDeleteResponse**](../Model/SearchDeleteResponse.md)
+[**\GeminiCommerce\Search\Model\SearchDeleteResponse**](../Model/SearchDeleteResponse.md)
 
 ### Authorization
 
@@ -148,7 +148,7 @@ try {
 ## `searchInsertOrReplace()`
 
 ```php
-searchInsertOrReplace($body): \OpenAPI\Client\Model\SearchWriteResponse
+searchInsertOrReplace($body): \GeminiCommerce\Search\Model\SearchWriteResponse
 ```
 
 Insert or replace documents to different elasticsearch indexes
@@ -163,23 +163,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: standardAuthorization
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 // Configure API key authorization: geminiAuthorization
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Gem-Token', 'YOUR_API_KEY');
+$config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKey('X-Gem-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Gem-Token', 'Bearer');
+// $config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Gem-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\SearchApi(
+$apiInstance = new GeminiCommerce\Search\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\SearchWriteRequest(); // \OpenAPI\Client\Model\SearchWriteRequest
+$body = new \GeminiCommerce\Search\Model\SearchWriteRequest(); // \GeminiCommerce\Search\Model\SearchWriteRequest
 
 try {
     $result = $apiInstance->searchInsertOrReplace($body);
@@ -193,11 +193,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\SearchWriteRequest**](../Model/SearchWriteRequest.md)|  | |
+| **body** | [**\GeminiCommerce\Search\Model\SearchWriteRequest**](../Model/SearchWriteRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SearchWriteResponse**](../Model/SearchWriteResponse.md)
+[**\GeminiCommerce\Search\Model\SearchWriteResponse**](../Model/SearchWriteResponse.md)
 
 ### Authorization
 
@@ -215,7 +215,7 @@ try {
 ## `searchMSearch()`
 
 ```php
-searchMSearch($body): \OpenAPI\Client\Model\SearchQueryResponse
+searchMSearch($body): \GeminiCommerce\Search\Model\SearchQueryResponse
 ```
 
 Send queries to different elasticsearch indexes
@@ -230,23 +230,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: standardAuthorization
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 // Configure API key authorization: geminiAuthorization
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Gem-Token', 'YOUR_API_KEY');
+$config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKey('X-Gem-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Gem-Token', 'Bearer');
+// $config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Gem-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\SearchApi(
+$apiInstance = new GeminiCommerce\Search\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\SearchQueryRequest(); // \OpenAPI\Client\Model\SearchQueryRequest
+$body = new \GeminiCommerce\Search\Model\SearchQueryRequest(); // \GeminiCommerce\Search\Model\SearchQueryRequest
 
 try {
     $result = $apiInstance->searchMSearch($body);
@@ -260,11 +260,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\SearchQueryRequest**](../Model/SearchQueryRequest.md)|  | |
+| **body** | [**\GeminiCommerce\Search\Model\SearchQueryRequest**](../Model/SearchQueryRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SearchQueryResponse**](../Model/SearchQueryResponse.md)
+[**\GeminiCommerce\Search\Model\SearchQueryResponse**](../Model/SearchQueryResponse.md)
 
 ### Authorization
 
@@ -282,7 +282,7 @@ try {
 ## `searchUpdate()`
 
 ```php
-searchUpdate($body): \OpenAPI\Client\Model\SearchWriteResponse
+searchUpdate($body): \GeminiCommerce\Search\Model\SearchWriteResponse
 ```
 
 Update documents to different elasticsearch indexes
@@ -297,23 +297,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: standardAuthorization
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 // Configure API key authorization: geminiAuthorization
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Gem-Token', 'YOUR_API_KEY');
+$config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKey('X-Gem-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Gem-Token', 'Bearer');
+// $config = GeminiCommerce\Search\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Gem-Token', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\SearchApi(
+$apiInstance = new GeminiCommerce\Search\Api\SearchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\SearchWriteRequest(); // \OpenAPI\Client\Model\SearchWriteRequest
+$body = new \GeminiCommerce\Search\Model\SearchWriteRequest(); // \GeminiCommerce\Search\Model\SearchWriteRequest
 
 try {
     $result = $apiInstance->searchUpdate($body);
@@ -327,11 +327,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\SearchWriteRequest**](../Model/SearchWriteRequest.md)|  | |
+| **body** | [**\GeminiCommerce\Search\Model\SearchWriteRequest**](../Model/SearchWriteRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SearchWriteResponse**](../Model/SearchWriteResponse.md)
+[**\GeminiCommerce\Search\Model\SearchWriteResponse**](../Model/SearchWriteResponse.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace GeminiCommerce\Search\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use GeminiCommerce\Search\ApiException;
+use GeminiCommerce\Search\Configuration;
+use GeminiCommerce\Search\HeaderSelector;
+use GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,12 +140,12 @@ class SearchApi
      *
      * Indexes configuration
      *
-     * @param  \OpenAPI\Client\Model\SearchConfigRequest $body body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchConfigRequest $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchConfiguration'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \GeminiCommerce\Search\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return object|\OpenAPI\Client\Model\RpcStatus
+     * @return object|\GeminiCommerce\Search\Model\RpcStatus
      */
     public function searchConfiguration($body, string $contentType = self::contentTypes['searchConfiguration'][0])
     {
@@ -158,12 +158,12 @@ class SearchApi
      *
      * Indexes configuration
      *
-     * @param  \OpenAPI\Client\Model\SearchConfigRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchConfigRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchConfiguration'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \GeminiCommerce\Search\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of object|\OpenAPI\Client\Model\RpcStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of object|\GeminiCommerce\Search\Model\RpcStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchConfigurationWithHttpInfo($body, string $contentType = self::contentTypes['searchConfiguration'][0])
     {
@@ -221,11 +221,11 @@ class SearchApi
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\RpcStatus' === '\SplFileObject') {
+                    if ('\GeminiCommerce\Search\Model\RpcStatus' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RpcStatus' !== 'string') {
+                        if ('\GeminiCommerce\Search\Model\RpcStatus' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -243,7 +243,7 @@ class SearchApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RpcStatus', []),
+                        ObjectSerializer::deserialize($content, '\GeminiCommerce\Search\Model\RpcStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -303,7 +303,7 @@ class SearchApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RpcStatus',
+                        '\GeminiCommerce\Search\Model\RpcStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -318,7 +318,7 @@ class SearchApi
      *
      * Indexes configuration
      *
-     * @param  \OpenAPI\Client\Model\SearchConfigRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchConfigRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchConfiguration'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -339,7 +339,7 @@ class SearchApi
      *
      * Indexes configuration
      *
-     * @param  \OpenAPI\Client\Model\SearchConfigRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchConfigRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchConfiguration'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -389,7 +389,7 @@ class SearchApi
     /**
      * Create request for operation 'searchConfiguration'
      *
-     * @param  \OpenAPI\Client\Model\SearchConfigRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchConfigRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchConfiguration'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -492,12 +492,12 @@ class SearchApi
      *
      * Delete Indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchDeleteRequest $body body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchDeleteRequest $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \GeminiCommerce\Search\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SearchDeleteResponse|\OpenAPI\Client\Model\RpcStatus
+     * @return \GeminiCommerce\Search\Model\SearchDeleteResponse|\GeminiCommerce\Search\Model\RpcStatus
      */
     public function searchDelete($body, string $contentType = self::contentTypes['searchDelete'][0])
     {
@@ -510,12 +510,12 @@ class SearchApi
      *
      * Delete Indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchDeleteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchDeleteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \GeminiCommerce\Search\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SearchDeleteResponse|\OpenAPI\Client\Model\RpcStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GeminiCommerce\Search\Model\SearchDeleteResponse|\GeminiCommerce\Search\Model\RpcStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchDeleteWithHttpInfo($body, string $contentType = self::contentTypes['searchDelete'][0])
     {
@@ -546,11 +546,11 @@ class SearchApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SearchDeleteResponse' === '\SplFileObject') {
+                    if ('\GeminiCommerce\Search\Model\SearchDeleteResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SearchDeleteResponse' !== 'string') {
+                        if ('\GeminiCommerce\Search\Model\SearchDeleteResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -568,16 +568,16 @@ class SearchApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SearchDeleteResponse', []),
+                        ObjectSerializer::deserialize($content, '\GeminiCommerce\Search\Model\SearchDeleteResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\RpcStatus' === '\SplFileObject') {
+                    if ('\GeminiCommerce\Search\Model\RpcStatus' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RpcStatus' !== 'string') {
+                        if ('\GeminiCommerce\Search\Model\RpcStatus' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -595,7 +595,7 @@ class SearchApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RpcStatus', []),
+                        ObjectSerializer::deserialize($content, '\GeminiCommerce\Search\Model\RpcStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -614,7 +614,7 @@ class SearchApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SearchDeleteResponse';
+            $returnType = '\GeminiCommerce\Search\Model\SearchDeleteResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -647,7 +647,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SearchDeleteResponse',
+                        '\GeminiCommerce\Search\Model\SearchDeleteResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -655,7 +655,7 @@ class SearchApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RpcStatus',
+                        '\GeminiCommerce\Search\Model\RpcStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -670,7 +670,7 @@ class SearchApi
      *
      * Delete Indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchDeleteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchDeleteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -691,7 +691,7 @@ class SearchApi
      *
      * Delete Indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchDeleteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchDeleteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -699,7 +699,7 @@ class SearchApi
      */
     public function searchDeleteAsyncWithHttpInfo($body, string $contentType = self::contentTypes['searchDelete'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SearchDeleteResponse';
+        $returnType = '\GeminiCommerce\Search\Model\SearchDeleteResponse';
         $request = $this->searchDeleteRequest($body, $contentType);
 
         return $this->client
@@ -741,7 +741,7 @@ class SearchApi
     /**
      * Create request for operation 'searchDelete'
      *
-     * @param  \OpenAPI\Client\Model\SearchDeleteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchDeleteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -844,12 +844,12 @@ class SearchApi
      *
      * Insert or replace documents to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchWriteRequest $body body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchWriteRequest $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchInsertOrReplace'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \GeminiCommerce\Search\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SearchWriteResponse|\OpenAPI\Client\Model\RpcStatus
+     * @return \GeminiCommerce\Search\Model\SearchWriteResponse|\GeminiCommerce\Search\Model\RpcStatus
      */
     public function searchInsertOrReplace($body, string $contentType = self::contentTypes['searchInsertOrReplace'][0])
     {
@@ -862,12 +862,12 @@ class SearchApi
      *
      * Insert or replace documents to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchWriteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchWriteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchInsertOrReplace'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \GeminiCommerce\Search\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SearchWriteResponse|\OpenAPI\Client\Model\RpcStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GeminiCommerce\Search\Model\SearchWriteResponse|\GeminiCommerce\Search\Model\RpcStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchInsertOrReplaceWithHttpInfo($body, string $contentType = self::contentTypes['searchInsertOrReplace'][0])
     {
@@ -898,11 +898,11 @@ class SearchApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SearchWriteResponse' === '\SplFileObject') {
+                    if ('\GeminiCommerce\Search\Model\SearchWriteResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SearchWriteResponse' !== 'string') {
+                        if ('\GeminiCommerce\Search\Model\SearchWriteResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -920,16 +920,16 @@ class SearchApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SearchWriteResponse', []),
+                        ObjectSerializer::deserialize($content, '\GeminiCommerce\Search\Model\SearchWriteResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\RpcStatus' === '\SplFileObject') {
+                    if ('\GeminiCommerce\Search\Model\RpcStatus' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RpcStatus' !== 'string') {
+                        if ('\GeminiCommerce\Search\Model\RpcStatus' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -947,7 +947,7 @@ class SearchApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RpcStatus', []),
+                        ObjectSerializer::deserialize($content, '\GeminiCommerce\Search\Model\RpcStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -966,7 +966,7 @@ class SearchApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SearchWriteResponse';
+            $returnType = '\GeminiCommerce\Search\Model\SearchWriteResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -999,7 +999,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SearchWriteResponse',
+                        '\GeminiCommerce\Search\Model\SearchWriteResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1007,7 +1007,7 @@ class SearchApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RpcStatus',
+                        '\GeminiCommerce\Search\Model\RpcStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1022,7 +1022,7 @@ class SearchApi
      *
      * Insert or replace documents to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchWriteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchWriteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchInsertOrReplace'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1043,7 +1043,7 @@ class SearchApi
      *
      * Insert or replace documents to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchWriteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchWriteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchInsertOrReplace'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1051,7 +1051,7 @@ class SearchApi
      */
     public function searchInsertOrReplaceAsyncWithHttpInfo($body, string $contentType = self::contentTypes['searchInsertOrReplace'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SearchWriteResponse';
+        $returnType = '\GeminiCommerce\Search\Model\SearchWriteResponse';
         $request = $this->searchInsertOrReplaceRequest($body, $contentType);
 
         return $this->client
@@ -1093,7 +1093,7 @@ class SearchApi
     /**
      * Create request for operation 'searchInsertOrReplace'
      *
-     * @param  \OpenAPI\Client\Model\SearchWriteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchWriteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchInsertOrReplace'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1196,12 +1196,12 @@ class SearchApi
      *
      * Send queries to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchQueryRequest $body body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchQueryRequest $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchMSearch'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \GeminiCommerce\Search\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SearchQueryResponse|\OpenAPI\Client\Model\RpcStatus
+     * @return \GeminiCommerce\Search\Model\SearchQueryResponse|\GeminiCommerce\Search\Model\RpcStatus
      */
     public function searchMSearch($body, string $contentType = self::contentTypes['searchMSearch'][0])
     {
@@ -1214,12 +1214,12 @@ class SearchApi
      *
      * Send queries to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchQueryRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchQueryRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchMSearch'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \GeminiCommerce\Search\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SearchQueryResponse|\OpenAPI\Client\Model\RpcStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GeminiCommerce\Search\Model\SearchQueryResponse|\GeminiCommerce\Search\Model\RpcStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchMSearchWithHttpInfo($body, string $contentType = self::contentTypes['searchMSearch'][0])
     {
@@ -1250,11 +1250,11 @@ class SearchApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SearchQueryResponse' === '\SplFileObject') {
+                    if ('\GeminiCommerce\Search\Model\SearchQueryResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SearchQueryResponse' !== 'string') {
+                        if ('\GeminiCommerce\Search\Model\SearchQueryResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1272,16 +1272,16 @@ class SearchApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SearchQueryResponse', []),
+                        ObjectSerializer::deserialize($content, '\GeminiCommerce\Search\Model\SearchQueryResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\RpcStatus' === '\SplFileObject') {
+                    if ('\GeminiCommerce\Search\Model\RpcStatus' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RpcStatus' !== 'string') {
+                        if ('\GeminiCommerce\Search\Model\RpcStatus' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1299,7 +1299,7 @@ class SearchApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RpcStatus', []),
+                        ObjectSerializer::deserialize($content, '\GeminiCommerce\Search\Model\RpcStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1318,7 +1318,7 @@ class SearchApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SearchQueryResponse';
+            $returnType = '\GeminiCommerce\Search\Model\SearchQueryResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1351,7 +1351,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SearchQueryResponse',
+                        '\GeminiCommerce\Search\Model\SearchQueryResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1359,7 +1359,7 @@ class SearchApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RpcStatus',
+                        '\GeminiCommerce\Search\Model\RpcStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1374,7 +1374,7 @@ class SearchApi
      *
      * Send queries to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchQueryRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchQueryRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchMSearch'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1395,7 +1395,7 @@ class SearchApi
      *
      * Send queries to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchQueryRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchQueryRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchMSearch'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1403,7 +1403,7 @@ class SearchApi
      */
     public function searchMSearchAsyncWithHttpInfo($body, string $contentType = self::contentTypes['searchMSearch'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SearchQueryResponse';
+        $returnType = '\GeminiCommerce\Search\Model\SearchQueryResponse';
         $request = $this->searchMSearchRequest($body, $contentType);
 
         return $this->client
@@ -1445,7 +1445,7 @@ class SearchApi
     /**
      * Create request for operation 'searchMSearch'
      *
-     * @param  \OpenAPI\Client\Model\SearchQueryRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchQueryRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchMSearch'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1548,12 +1548,12 @@ class SearchApi
      *
      * Update documents to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchWriteRequest $body body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchWriteRequest $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchUpdate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \GeminiCommerce\Search\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SearchWriteResponse|\OpenAPI\Client\Model\RpcStatus
+     * @return \GeminiCommerce\Search\Model\SearchWriteResponse|\GeminiCommerce\Search\Model\RpcStatus
      */
     public function searchUpdate($body, string $contentType = self::contentTypes['searchUpdate'][0])
     {
@@ -1566,12 +1566,12 @@ class SearchApi
      *
      * Update documents to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchWriteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchWriteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchUpdate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \GeminiCommerce\Search\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SearchWriteResponse|\OpenAPI\Client\Model\RpcStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GeminiCommerce\Search\Model\SearchWriteResponse|\GeminiCommerce\Search\Model\RpcStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchUpdateWithHttpInfo($body, string $contentType = self::contentTypes['searchUpdate'][0])
     {
@@ -1602,11 +1602,11 @@ class SearchApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SearchWriteResponse' === '\SplFileObject') {
+                    if ('\GeminiCommerce\Search\Model\SearchWriteResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SearchWriteResponse' !== 'string') {
+                        if ('\GeminiCommerce\Search\Model\SearchWriteResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1624,16 +1624,16 @@ class SearchApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SearchWriteResponse', []),
+                        ObjectSerializer::deserialize($content, '\GeminiCommerce\Search\Model\SearchWriteResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\RpcStatus' === '\SplFileObject') {
+                    if ('\GeminiCommerce\Search\Model\RpcStatus' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RpcStatus' !== 'string') {
+                        if ('\GeminiCommerce\Search\Model\RpcStatus' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1651,7 +1651,7 @@ class SearchApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RpcStatus', []),
+                        ObjectSerializer::deserialize($content, '\GeminiCommerce\Search\Model\RpcStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1670,7 +1670,7 @@ class SearchApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SearchWriteResponse';
+            $returnType = '\GeminiCommerce\Search\Model\SearchWriteResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1703,7 +1703,7 @@ class SearchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SearchWriteResponse',
+                        '\GeminiCommerce\Search\Model\SearchWriteResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1711,7 +1711,7 @@ class SearchApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RpcStatus',
+                        '\GeminiCommerce\Search\Model\RpcStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1726,7 +1726,7 @@ class SearchApi
      *
      * Update documents to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchWriteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchWriteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1747,7 +1747,7 @@ class SearchApi
      *
      * Update documents to different elasticsearch indexes
      *
-     * @param  \OpenAPI\Client\Model\SearchWriteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchWriteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1755,7 +1755,7 @@ class SearchApi
      */
     public function searchUpdateAsyncWithHttpInfo($body, string $contentType = self::contentTypes['searchUpdate'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SearchWriteResponse';
+        $returnType = '\GeminiCommerce\Search\Model\SearchWriteResponse';
         $request = $this->searchUpdateRequest($body, $contentType);
 
         return $this->client
@@ -1797,7 +1797,7 @@ class SearchApi
     /**
      * Create request for operation 'searchUpdate'
      *
-     * @param  \OpenAPI\Client\Model\SearchWriteRequest $body (required)
+     * @param  \GeminiCommerce\Search\Model\SearchWriteRequest $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

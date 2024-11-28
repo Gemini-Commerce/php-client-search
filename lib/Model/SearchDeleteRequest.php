@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchDeleteRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class SearchDeleteRequest implements ModelInterface, ArrayAccess, \JsonSerializa
       */
     protected static $openAPITypes = [
         'tenant_id' => 'string',
-        'constraints' => '\OpenAPI\Client\Model\SearchDeleteConstraints[]'
+        'constraints' => '\GeminiCommerce\Search\Model\SearchDeleteConstraints[]'
     ];
 
     /**
@@ -336,7 +336,7 @@ class SearchDeleteRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets constraints
      *
-     * @return \OpenAPI\Client\Model\SearchDeleteConstraints[]|null
+     * @return \GeminiCommerce\Search\Model\SearchDeleteConstraints[]|null
      */
     public function getConstraints()
     {
@@ -346,7 +346,7 @@ class SearchDeleteRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets constraints
      *
-     * @param \OpenAPI\Client\Model\SearchDeleteConstraints[]|null $constraints constraints to remove (index name) [#DOCGENBUG REQUIRED FIELD]
+     * @param \GeminiCommerce\Search\Model\SearchDeleteConstraints[]|null $constraints constraints to remove (index name) [#DOCGENBUG REQUIRED FIELD]
      *
      * @return self
      */

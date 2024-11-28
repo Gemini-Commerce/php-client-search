@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchConfigSchema Class Doc Comment
  *
  * @category Class
  * @description contains index configurations fields
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,11 +63,11 @@ class SearchConfigSchema implements ModelInterface, ArrayAccess, \JsonSerializab
     protected static $openAPITypes = [
         'index' => 'string',
         'document_key_name' => 'string',
-        'attributes' => '\OpenAPI\Client\Model\SearchConfigSchemaAttribute[]',
-        'searchables' => '\OpenAPI\Client\Model\SearchConfigSchemaSearchable[]',
-        'facets' => '\OpenAPI\Client\Model\SearchConfigSchemaFacet[]',
-        'filters' => '\OpenAPI\Client\Model\SearchConfigSchemaFilter[]',
-        'sortables' => '\OpenAPI\Client\Model\SearchConfigSchemaSortable[]'
+        'attributes' => '\GeminiCommerce\Search\Model\SearchConfigSchemaAttribute[]',
+        'searchables' => '\GeminiCommerce\Search\Model\SearchConfigSchemaSearchable[]',
+        'facets' => '\GeminiCommerce\Search\Model\SearchConfigSchemaFacet[]',
+        'filters' => '\GeminiCommerce\Search\Model\SearchConfigSchemaFilter[]',
+        'sortables' => '\GeminiCommerce\Search\Model\SearchConfigSchemaSortable[]'
     ];
 
     /**
@@ -405,7 +405,7 @@ class SearchConfigSchema implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets attributes
      *
-     * @return \OpenAPI\Client\Model\SearchConfigSchemaAttribute[]
+     * @return \GeminiCommerce\Search\Model\SearchConfigSchemaAttribute[]
      */
     public function getAttributes()
     {
@@ -415,7 +415,7 @@ class SearchConfigSchema implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets attributes
      *
-     * @param \OpenAPI\Client\Model\SearchConfigSchemaAttribute[] $attributes fields that can be stored into index and later retrieved
+     * @param \GeminiCommerce\Search\Model\SearchConfigSchemaAttribute[] $attributes fields that can be stored into index and later retrieved
      *
      * @return self
      */
@@ -432,7 +432,7 @@ class SearchConfigSchema implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets searchables
      *
-     * @return \OpenAPI\Client\Model\SearchConfigSchemaSearchable[]|null
+     * @return \GeminiCommerce\Search\Model\SearchConfigSchemaSearchable[]|null
      */
     public function getSearchables()
     {
@@ -442,7 +442,7 @@ class SearchConfigSchema implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets searchables
      *
-     * @param \OpenAPI\Client\Model\SearchConfigSchemaSearchable[]|null $searchables fields that can be used for fulltext searches
+     * @param \GeminiCommerce\Search\Model\SearchConfigSchemaSearchable[]|null $searchables fields that can be used for fulltext searches
      *
      * @return self
      */
@@ -459,7 +459,7 @@ class SearchConfigSchema implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets facets
      *
-     * @return \OpenAPI\Client\Model\SearchConfigSchemaFacet[]|null
+     * @return \GeminiCommerce\Search\Model\SearchConfigSchemaFacet[]|null
      */
     public function getFacets()
     {
@@ -469,7 +469,7 @@ class SearchConfigSchema implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets facets
      *
-     * @param \OpenAPI\Client\Model\SearchConfigSchemaFacet[]|null $facets fields that can be used for aggregations
+     * @param \GeminiCommerce\Search\Model\SearchConfigSchemaFacet[]|null $facets fields that can be used for aggregations
      *
      * @return self
      */
@@ -486,7 +486,7 @@ class SearchConfigSchema implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets filters
      *
-     * @return \OpenAPI\Client\Model\SearchConfigSchemaFilter[]|null
+     * @return \GeminiCommerce\Search\Model\SearchConfigSchemaFilter[]|null
      */
     public function getFilters()
     {
@@ -496,7 +496,7 @@ class SearchConfigSchema implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets filters
      *
-     * @param \OpenAPI\Client\Model\SearchConfigSchemaFilter[]|null $filters fields that can be used for filtering
+     * @param \GeminiCommerce\Search\Model\SearchConfigSchemaFilter[]|null $filters fields that can be used for filtering
      *
      * @return self
      */
@@ -513,7 +513,7 @@ class SearchConfigSchema implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets sortables
      *
-     * @return \OpenAPI\Client\Model\SearchConfigSchemaSortable[]|null
+     * @return \GeminiCommerce\Search\Model\SearchConfigSchemaSortable[]|null
      */
     public function getSortables()
     {
@@ -523,7 +523,7 @@ class SearchConfigSchema implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets sortables
      *
-     * @param \OpenAPI\Client\Model\SearchConfigSchemaSortable[]|null $sortables fields that can be used for sorting
+     * @param \GeminiCommerce\Search\Model\SearchConfigSchemaSortable[]|null $sortables fields that can be used for sorting
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchConfigSchemaAttribute Class Doc Comment
  *
  * @category Class
  * @description contains the configurations needed to define an attribute within documents
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class SearchConfigSchemaAttribute implements ModelInterface, ArrayAccess, \JsonS
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'type' => '\OpenAPI\Client\Model\SearchConfigSchemaAttributeType',
+        'type' => '\GeminiCommerce\Search\Model\SearchConfigSchemaAttributeType',
         'language' => 'string'
     ];
 
@@ -347,7 +347,7 @@ class SearchConfigSchemaAttribute implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\SearchConfigSchemaAttributeType|null
+     * @return \GeminiCommerce\Search\Model\SearchConfigSchemaAttributeType|null
      */
     public function getType()
     {
@@ -357,7 +357,7 @@ class SearchConfigSchemaAttribute implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\SearchConfigSchemaAttributeType|null $type type
+     * @param \GeminiCommerce\Search\Model\SearchConfigSchemaAttributeType|null $type type
      *
      * @return self
      */

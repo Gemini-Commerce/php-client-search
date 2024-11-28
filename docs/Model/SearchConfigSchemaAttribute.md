@@ -7,7 +7,7 @@ contains the configurations needed to define an attribute within documents
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name**| **string** | attribute name  |
-**type**| [**\OpenAPI\Client\Model\SearchConfigSchemaAttributeType**](SearchConfigSchemaAttributeType.md) |  for more information please, see Model/SearchConfigSchemaAttributeType.php  | [optional]
+**type**| [**\GeminiCommerce\Search\Model\SearchConfigSchemaAttributeType**](SearchConfigSchemaAttributeType.md) |  for more information please, see Model/SearchConfigSchemaAttributeType.php  | [optional]
 **language**| **string** | locale code (currently only it_IT and en_US are supported)  | [optional]
 
 

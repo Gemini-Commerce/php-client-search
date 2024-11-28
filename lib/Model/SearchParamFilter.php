@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchParamFilter Class Doc Comment
  *
  * @category Class
  * @description contains a list of document attributes and relative values which you want to filter search results
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class SearchParamFilter implements ModelInterface, ArrayAccess, \JsonSerializabl
       */
     protected static $openAPITypes = [
         'filter' => 'string',
-        'type' => '\OpenAPI\Client\Model\SearchParamFilterType'
+        'type' => '\GeminiCommerce\Search\Model\SearchParamFilterType'
     ];
 
     /**
@@ -340,7 +340,7 @@ class SearchParamFilter implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\SearchParamFilterType|null
+     * @return \GeminiCommerce\Search\Model\SearchParamFilterType|null
      */
     public function getType()
     {
@@ -350,7 +350,7 @@ class SearchParamFilter implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\SearchParamFilterType|null $type type
+     * @param \GeminiCommerce\Search\Model\SearchParamFilterType|null $type type
      *
      * @return self
      */

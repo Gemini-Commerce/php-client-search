@@ -7,7 +7,7 @@ contains the search request payload
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **index**| **string** | index where to search data  |
-**params**| [**\OpenAPI\Client\Model\SearchParams**](SearchParams.md) |   |
+**params**| [**\GeminiCommerce\Search\Model\SearchParams**](SearchParams.md) |   |
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

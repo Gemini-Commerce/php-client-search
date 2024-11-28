@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**constraints**| [**\OpenAPI\Client\Model\SearchDeleteConstraints**](SearchDeleteConstraints.md) |   | [optional]
+**constraints**| [**\GeminiCommerce\Search\Model\SearchDeleteConstraints**](SearchDeleteConstraints.md) |   | [optional]
 **code**| **string** |   | [optional]
 **message**| **string** |   | [optional]
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchParamFacet Class Doc Comment
  *
  * @category Class
  * @description contains a list of document attributes which you want to be returned as aggregations by attribute values to make filter suggestions
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class SearchParamFacet implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'attribute' => 'string',
         'limit' => 'int',
-        'type' => '\OpenAPI\Client\Model\SearchParamFacetType',
+        'type' => '\GeminiCommerce\Search\Model\SearchParamFacetType',
         'params' => 'string',
         'name' => 'string'
     ];
@@ -388,7 +388,7 @@ class SearchParamFacet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\SearchParamFacetType|null
+     * @return \GeminiCommerce\Search\Model\SearchParamFacetType|null
      */
     public function getType()
     {
@@ -398,7 +398,7 @@ class SearchParamFacet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\SearchParamFacetType|null $type type
+     * @param \GeminiCommerce\Search\Model\SearchParamFacetType|null $type type
      *
      * @return self
      */

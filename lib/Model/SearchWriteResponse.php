@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchWriteResponse Class Doc Comment
  *
  * @category Class
  * @description contains write operation result response from search service
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class SearchWriteResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       */
     protected static $openAPITypes = [
         'index' => 'string',
-        'errors' => '\OpenAPI\Client\Model\SearchWriteError[]'
+        'errors' => '\GeminiCommerce\Search\Model\SearchWriteError[]'
     ];
 
     /**
@@ -340,7 +340,7 @@ class SearchWriteResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\SearchWriteError[]|null
+     * @return \GeminiCommerce\Search\Model\SearchWriteError[]|null
      */
     public function getErrors()
     {
@@ -350,7 +350,7 @@ class SearchWriteResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\SearchWriteError[]|null $errors array of errors obtained during elasticsearch documents write or update
+     * @param \GeminiCommerce\Search\Model\SearchWriteError[]|null $errors array of errors obtained during elasticsearch documents write or update
      *
      * @return self
      */

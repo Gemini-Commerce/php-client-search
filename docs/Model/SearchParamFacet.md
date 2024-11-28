@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **attribute**| **string** | JSON string that contains the list of attributes you want to create aggregation to make filter suggestion  |
 **limit**| **int** | Limit of facets result  | [optional]
-**type**| [**\OpenAPI\Client\Model\SearchParamFacetType**](SearchParamFacetType.md) |  for more information please, see Model/SearchParamFacetType.php  | [optional]
+**type**| [**\GeminiCommerce\Search\Model\SearchParamFacetType**](SearchParamFacetType.md) |  for more information please, see Model/SearchParamFacetType.php  | [optional]
 **params**| **string** |   | [optional]
 **name**| **string** |   | [optional]
 

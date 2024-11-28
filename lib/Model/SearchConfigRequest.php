@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace GeminiCommerce\Search\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \GeminiCommerce\Search\ObjectSerializer;
 
 /**
  * SearchConfigRequest Class Doc Comment
  *
  * @category Class
  * @description contains all the necessary to create or update an index
- * @package  OpenAPI\Client
+ * @package  GeminiCommerce\Search
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class SearchConfigRequest implements ModelInterface, ArrayAccess, \JsonSerializa
       */
     protected static $openAPITypes = [
         'tenant_id' => 'string',
-        'config_schema' => '\OpenAPI\Client\Model\SearchConfigSchema[]'
+        'config_schema' => '\GeminiCommerce\Search\Model\SearchConfigSchema[]'
     ];
 
     /**
@@ -337,7 +337,7 @@ class SearchConfigRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets config_schema
      *
-     * @return \OpenAPI\Client\Model\SearchConfigSchema[]|null
+     * @return \GeminiCommerce\Search\Model\SearchConfigSchema[]|null
      */
     public function getConfigSchema()
     {
@@ -347,7 +347,7 @@ class SearchConfigRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets config_schema
      *
-     * @param \OpenAPI\Client\Model\SearchConfigSchema[]|null $config_schema contains index configurations fields [#DOCGENBUG REQUIRED FIELD]
+     * @param \GeminiCommerce\Search\Model\SearchConfigSchema[]|null $config_schema contains index configurations fields [#DOCGENBUG REQUIRED FIELD]
      *
      * @return self
      */
